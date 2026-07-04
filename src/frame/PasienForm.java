@@ -213,6 +213,7 @@ private void nomorOtomatis() {
         txtAlamat.addActionListener(this::txtAlamatActionPerformed);
 
         btnSimpan.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/save.png"))); // NOI18N
         btnSimpan.setText("SIMPAN");
         btnSimpan.setName("btnSimpan"); // NOI18N
         btnSimpan.addActionListener(this::btnSimpanActionPerformed);
@@ -226,7 +227,7 @@ private void nomorOtomatis() {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "No", "Nama", "Kelamin", "Alamat"
             }
         ));
         tablePasien.setName("tablePasien"); // NOI18N
@@ -261,14 +262,17 @@ private void nomorOtomatis() {
         jLabel7.setText("No identitas");
 
         btnEdit.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/pen.png"))); // NOI18N
         btnEdit.setText("EDIT");
         btnEdit.addActionListener(this::btnEditActionPerformed);
 
         btnHapus.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnHapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/delete.png"))); // NOI18N
         btnHapus.setText("HAPUS");
         btnHapus.addActionListener(this::btnHapusActionPerformed);
 
         btnClear.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/cleaning.png"))); // NOI18N
         btnClear.setText("CLEAR");
         btnClear.addActionListener(this::btnClearActionPerformed);
 
@@ -279,6 +283,7 @@ private void nomorOtomatis() {
         });
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/search.png"))); // NOI18N
         jLabel8.setText("CARI");
 
         cbKlm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Laki-laki", "Perempuan" }));
@@ -286,6 +291,7 @@ private void nomorOtomatis() {
         cbKlm.setAlignmentY(1.0F);
 
         btnKembali.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/logout.png"))); // NOI18N
         btnKembali.setText("KEMBALI");
         btnKembali.addActionListener(this::btnKembaliActionPerformed);
 
@@ -342,7 +348,7 @@ private void nomorOtomatis() {
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(81, 81, 81))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)))
                         .addComponent(txtCari, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
@@ -399,8 +405,7 @@ private void nomorOtomatis() {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnKembali)))
                 .addGap(23, 23, 23)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE))
         );
 
         pack();

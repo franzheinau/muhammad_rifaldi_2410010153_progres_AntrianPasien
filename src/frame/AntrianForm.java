@@ -170,6 +170,7 @@ private void tampilPasien() {
         cbStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Menunggu", "Dipanggil", "Selesai" }));
 
         btnAmbil.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnAmbil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/hand.png"))); // NOI18N
         btnAmbil.setText("AMBIL ANTRIAN");
         btnAmbil.addActionListener(this::btnAmbilActionPerformed);
 
@@ -194,7 +195,7 @@ private void tampilPasien() {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "No", "Nama", "Poli", "Status"
             }
         ));
         tableAntrian.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -205,14 +206,17 @@ private void tampilPasien() {
         jScrollPane1.setViewportView(tableAntrian);
 
         btnPanggil.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnPanggil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/phone-call.png"))); // NOI18N
         btnPanggil.setText("PANGGIL");
         btnPanggil.addActionListener(this::btnPanggilActionPerformed);
 
         btnSelesai.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnSelesai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/save.png"))); // NOI18N
         btnSelesai.setText("SELESAI");
         btnSelesai.addActionListener(this::btnSelesaiActionPerformed);
 
         btnKembali.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/logout.png"))); // NOI18N
         btnKembali.setText("KEMBALI");
         btnKembali.addActionListener(this::btnKembaliActionPerformed);
 
@@ -272,7 +276,7 @@ private void tampilPasien() {
                 .addComponent(btnSelesai)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnKembali)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );

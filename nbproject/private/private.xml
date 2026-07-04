@@ -7,6 +7,12 @@
             <file>file:/D:/PROJECT/antrianPasien/src/koneksi/Koneksi.java</file>
             <file>file:/D:/PROJECT/antrianPasien/src/model/Pasien.java</file>
             <file>file:/D:/PROJECT/antrianPasien/src/controller/PasienController.java</file>
+            <file>file:/D:/PROJECT/antrianPasien/src/controller/LoginController.java</file>
+            <file>file:/D:/PROJECT/antrianPasien/src/frame/LoginForm.java</file>
+            <file>file:/D:/PROJECT/antrianPasien/src/controller/DashboardController.java</file>
+            <file>file:/D:/PROJECT/antrianPasien/src/frame/DashboardForm.java</file>
+            <file>file:/D:/PROJECT/antrianPasien/src/model/Antrian.java</file>
+            <file>file:/D:/PROJECT/antrianPasien/src/controller/AntrianController.java</file>
         </group>
     </open-files>
 </project-private>
